@@ -1,3 +1,4 @@
-karudev_service_homepage:
-    path:     /
-    defaults: { _controller: KarudevServiceBundle:Default:index }
+#karudev_service_homepage:
+#    path:     /
+#    defaults: { _controller: KarudevServiceBundle:Default:index }
+#

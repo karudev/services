@@ -50,6 +50,9 @@ class Prestation
     private $vat;
 
 
+    public function __toString() {
+        return $this->name;
+    }
     /**
      * Get id
      *
@@ -154,6 +157,17 @@ class Prestation
     public function getVat()
     {
         return $this->vat;
+    }
+    
+    
+    public function getAmount()
+    {
+        return $this->preTaxAmount + $this->vat;
+    }
+    
+    public function getVatPercent()
+    {
+       return  $this->vat / $this->preTaxAmount * 100 ;
     }
 }
 
